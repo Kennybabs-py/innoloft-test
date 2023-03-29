@@ -36,4 +36,5 @@ export type ProductType = {
   user: UserType;
   company: { name: string; logo: string; address: AddressType };
   businessModels: IdType[];
+  video: string;
 };
