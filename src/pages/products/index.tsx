@@ -14,19 +14,17 @@ export default function Products() {
   );
   const dispatch = useAppDispatch();
 
-  console.log(products);
-
   useEffect(() => {
     dispatch(fetchProducts());
   }, []);
 
   return (
-    <section className="w-full max-w-[1130px] border border-solid border-black py-6 ">
+    <section className="w-full max-w-[1130px] py-6 px-2 border-box">
       {/* main */}
       <section className="flex items-start justify-start flex-wrap gap-4 pb-5 bg-white rounded-md border border-solid border-[#E5E7EB]">
         {/* product description */}
         <div className="w-full max-w-[746px]">
-          <figure className="w-full aspect-[2.5/1] border border-solid border-black">
+          <figure className="w-full aspect-[2.5/1] ">
             <img
               src={products.picture}
               alt=""
